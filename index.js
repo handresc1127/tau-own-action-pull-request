@@ -44,6 +44,8 @@ const main = async () => {
       return acc;
     }, diffData);
 
+    console.log('Diff Data OK');
+
     for (const file of changedFiles) {
       // Add labels according to file types.
       const fileExtension = file.filename.split('.').pop();
